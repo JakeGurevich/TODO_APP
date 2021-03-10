@@ -79,7 +79,9 @@ const setTasks = () => {
 const createTask = () => {
   console.log(taskInput.value);
   const myData = JSON.parse(localStorage.getItem("data"));
-
+  if (!JSON.parse(localStorage.getItem("data"))) {
+    localStorage.setItem("data", JSON.stringify([]));
+  }
   const obj = {};
   obj.id = app.count++;
   obj.date = getDate();
