@@ -137,12 +137,12 @@ console.log(getDate());
 
 // console.log(readTask());
 // console.log(updateTasks(2, "new name", true));
-removeTask(2);
-removeTask(4);
+// removeTask(2);
+// removeTask(4);
 const print = () => {
   app.taskList.map((e) => {
     return console.log(e.name);
   });
 };
 btn.addEventListener("click", () => createTask());
-print();
+// print();
