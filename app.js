@@ -104,8 +104,6 @@ const searchTask = (index) => {
 
 // createTask(data);
 
-searchTask(1);
-
 //Update
 const updateTasks = (index, value) => {
   const myData = JSON.parse(localStorage.getItem("data"));
